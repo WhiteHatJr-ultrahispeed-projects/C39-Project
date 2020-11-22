@@ -3,10 +3,10 @@ var monkey , monkey_running
 var banana ,bananaImage, obstacle, obstacleImage
 var FoodGroup, obstacleGroup
 var score
-//var bg;
+var bg;
 
 function preload(){
-   //bg = loadImage("bg.png");
+   bg = loadImage("bg.png");
   
   monkey_running =            loadAnimation("sprite_0.png","sprite_1.png","sprite_2.png","sprite_3.png","sprite_4.png","sprite_5.png","sprite_6.png","sprite_7.png","sprite_8.png")
   
@@ -35,7 +35,7 @@ monkey = createSprite(100,340,20,50);
 
 
 function draw() {
-background("red");
+background(bg);
   if(ground.x<0){
     ground.x=ground.width/2;
   }
